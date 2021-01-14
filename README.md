@@ -143,6 +143,100 @@ Make three full clones of the primary machine:
 
 ![image](https://user-images.githubusercontent.com/39446946/104562720-0db04c80-568c-11eb-96ec-2074937adb29.png)
 
+# Step 14: Change hostnames
 
+Start for changing the hostnames: (computer’s name)
 
+![image](https://user-images.githubusercontent.com/39446946/104562879-45b78f80-568c-11eb-9f70-3f88f1aa6901.png)
+
+![image](https://user-images.githubusercontent.com/39446946/104563050-857e7700-568c-11eb-8b65-74726eb9bc65.png)
+
+Do the same for secondary machines:
+
+![image](https://user-images.githubusercontent.com/39446946/104563244-c080aa80-568c-11eb-91ad-8cc1984c6682.png)
+
+![image](https://user-images.githubusercontent.com/39446946/104564980-f030b200-568e-11eb-8df5-b2636b8edc08.png)
+
+![image](https://user-images.githubusercontent.com/39446946/104563415-f6be2a00-568c-11eb-9fa1-630d94ad9ed8.png)
+
+Now reboot all machines.
+
+# Step 15: Identify machine’s ip
+
+To know the machine’s IP use:
+
+![image](https://user-images.githubusercontent.com/39446946/104563497-11909e80-568d-11eb-9a6f-6975cc345a51.png)
+
+Write down all the IP’s.
+
+Now change the hosts file on all machines:
+
+![image](https://user-images.githubusercontent.com/39446946/104563607-338a2100-568d-11eb-935f-37a7a33cdeed.png)
+
+![image](https://user-images.githubusercontent.com/39446946/104563999-b9a66780-568d-11eb-8b20-6b8d4afc6329.png)
+
+# Step 16: Set up ssh on Primary with our user
+
+Start for changing user:
+
+![image](https://user-images.githubusercontent.com/39446946/104564181-f07c7d80-568d-11eb-8b8d-3ae29316e118.png)
+
+Now you need to generate a ssh key for this user:
+
+![image](https://user-images.githubusercontent.com/39446946/104564229-01c58a00-568e-11eb-978c-c868fa58f449.png)
+
+# Step 17: Copy the ssh key our secondary machines
+
+Copy the already generated key to all the machines:
+
+"ssh-copy-id h-user@hadoop-master"
+"ssh-copy-id h-user@hadoop-slave1"
+"ssh-copy-id h-user@hadoop-slave2"
+"ssh-copy-id h-user@hadoop-slave3"
+
+# Step 18: Configure Hadoop Service Port
+
+Change hadoop port configurations: (only on primary)
+
+![image](https://user-images.githubusercontent.com/39446946/104564455-43eecb80-568e-11eb-953d-3c469c23d77b.png)
+
+And then add to file’s configuration:
+
+![image](https://user-images.githubusercontent.com/39446946/104564503-536e1480-568e-11eb-9e25-3fba3e64b1b2.png)
+
+# Step 19: Configuration of HDFS system
+
+Change HDFS configurations: (only on primary)
+
+![image](https://user-images.githubusercontent.com/39446946/104564559-65e84e00-568e-11eb-886b-b578625a1134.png)
+
+And then add to file’s configuration:
+
+![image](https://user-images.githubusercontent.com/39446946/104564597-74cf0080-568e-11eb-889e-c0f98ae9c3fc.png)
+
+# Step 20: Identify the workers
+
+Add the secondary machines to workers file: (only on primary)
+
+![image](https://user-images.githubusercontent.com/39446946/104564634-831d1c80-568e-11eb-8b04-37040cc7f1a9.png)
+
+![image](https://user-images.githubusercontent.com/39446946/104564722-9af4a080-568e-11eb-8214-44c0c98d400a.png)
+
+# Step 21: Copy configurations into secondary machines
+
+You need to make sure that all the configurations that you just change are going to all machines, to do so, execute the following commands:
+
+hadoop-slave1: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave1:/usr/local/hadoop/etc/hadoop/
+hadoop-slave2: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave2:/usr/local/hadoop/etc/hadoop/
+hadoop-slave3: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave3:/usr/local/hadoop/etc/hadoop/
+
+# Step 22: Formatting and Starting HDFS system (only primary)
+
+Start for making sure that all changes are applied:
+
+![image](https://user-images.githubusercontent.com/39446946/104565094-1ce4c980-568f-11eb-9c1d-5af0d6401fd6.png)
+
+Then format the hdfs system with:
+
+![image](https://user-images.githubusercontent.com/39446946/104565128-29692200-568f-11eb-9304-9c4baa192c11.png)
 
