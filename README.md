@@ -191,13 +191,13 @@ Now you need to generate a ssh key for this user:
 
 Copy the already generated key to all the machines:
 
-* "ssh-copy-id h-user@hadoop-master"
+* "ssh-copy-id hadoop-user@hadoop-master"
 
-* "ssh-copy-id h-user@hadoop-slave1"
+* "ssh-copy-id hadoop-user@hadoop-slave1"
 
-* "ssh-copy-id h-user@hadoop-slave2"
+* "ssh-copy-id hadoop-user@hadoop-slave2"
 
-* "ssh-copy-id h-user@hadoop-slave3"
+* "ssh-copy-id hadoop-user@hadoop-slave3"
 
 # Step 18: Configure Hadoop Service Port
 
