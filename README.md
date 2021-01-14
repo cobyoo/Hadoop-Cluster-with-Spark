@@ -245,4 +245,35 @@ Then format the hdfs system with:
 
 ![image](https://user-images.githubusercontent.com/39446946/104565128-29692200-568f-11eb-9304-9c4baa192c11.png)
 
+Make sure that your .bashrc file is configure:
+
+![image](https://user-images.githubusercontent.com/39446946/104573051-cd56cb80-5697-11eb-81df-9d59adaf827c.png)
+
+And check if in the end of the file have the following path:
+
+![image](https://user-images.githubusercontent.com/39446946/104573123-e2cbf580-5697-11eb-87bb-21830b891d5d.png)
+
+Update the changes:
+
+![image](https://user-images.githubusercontent.com/39446946/104573162-eeb7b780-5697-11eb-84e9-131d12a849d5.png)
+
+When this operations are done, start the service:
+
+![image](https://user-images.githubusercontent.com/39446946/104573200-f9724c80-5697-11eb-9dad-5a787a325261.png)
+
+To check if all the machines are using the correct resources use:
+
+![image](https://user-images.githubusercontent.com/39446946/104573249-04c57800-5698-11eb-921b-5a4e1395433c.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
