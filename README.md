@@ -76,9 +76,11 @@ In order to run Hadoop you need to have Java 8 install on your machine. To do so
 
 Download the "wget https://github.com/frekele/oracle-java/releases/download/8u212-b10/jdk-8u212-linux-x64.tar.gz" file.
 
-Unzip the "tar-xvzf jdk-8u212-linux-x64.tar.gz" file.
+Unzip the "tar -xvzf jdk-8u212-linux-x64.tar.gz" file.
 
 Enter 'sudo nano /etc/profile' to set the Java path.
+
+sudo mv jdk1.8.0_212 /usr/local
 
 ![image](https://user-images.githubusercontent.com/39446946/104560943-f8d2b980-5689-11eb-82a9-e01a69a4d7e5.png)
 
