@@ -291,9 +291,10 @@ It’s time to check if all is working fine. Write primary’s IP on your browse
 
 ![image](https://user-images.githubusercontent.com/39446946/104608884-c6df4880-56c5-11eb-8465-5d8573d084bf.png)
 
+# 34th Step:
 
+Open your browser. Now you will type http://hadoop-master:8088/cluster
 
+![image](https://user-images.githubusercontent.com/39446946/104609558-8207e180-56c6-11eb-8227-177c17b1f2cb.png)
 
-
-
-
+As you can see, the cluster shows 3 active nodes!
