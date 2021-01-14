@@ -245,3 +245,4 @@ Then format the hdfs system with:
 
 ![image](https://user-images.githubusercontent.com/39446946/104565128-29692200-568f-11eb-9304-9c4baa192c11.png)
 
+
