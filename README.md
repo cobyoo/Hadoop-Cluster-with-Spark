@@ -265,6 +265,20 @@ To check if all the machines are using the correct resources use:
 
 ![image](https://user-images.githubusercontent.com/39446946/104573249-04c57800-5698-11eb-921b-5a4e1395433c.png)
 
+Output hadoop-master:
+
+
+
+Output hadoop-slave1:
+
+
+
+Output hadoop-slave2:
+
+
+
+Output hadoop-slave3:
+
 
 
 
