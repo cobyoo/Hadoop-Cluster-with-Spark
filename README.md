@@ -291,10 +291,29 @@ It’s time to check if all is working fine. Write primary’s IP on your browse
 
 ![image](https://user-images.githubusercontent.com/39446946/104608884-c6df4880-56c5-11eb-8465-5d8573d084bf.png)
 
-# 34th Step:
+# 24th Step: Yarn configuration
 
-Open your browser. Now you will type http://hadoop-master:8088/cluster
+To set up yarn you need to start for exporting all paths: (on hadoop-master)
 
-![image](https://user-images.githubusercontent.com/39446946/104609558-8207e180-56c6-11eb-8227-177c17b1f2cb.png)
+![image](https://user-images.githubusercontent.com/39446946/104610076-0f4b3600-56c7-11eb-9329-aa756c620ce4.png)
 
-As you can see, the cluster shows 3 active nodes!
+Now just change yarn’s configuration on both secondarys:
+
+![image](https://user-images.githubusercontent.com/39446946/104610155-22f69c80-56c7-11eb-8081-b6c2d0e8a0ab.png)
+
+And then add the following configurations: (On hadoop-slave1, hadoop-slave2, hadoop-slave3)
+
+![image](https://user-images.githubusercontent.com/39446946/104610207-30ac2200-56c7-11eb-8f84-76d438e39957.png)
+
+# Step 25: Start Yarn 
+
+To start the Yarn service use: (On hadoop-master)
+
+![image](https://user-images.githubusercontent.com/39446946/104610312-51747780-56c7-11eb-91b0-d838403ddda6.png)
+
+To have acess to Yarn’s management tool use your browser to acess to primary IP on port 8088:
+
+![image](https://user-images.githubusercontent.com/39446946/104610447-7c5ecb80-56c7-11eb-9c93-117dcb52cf5b.png)
+
+# Finish.
+
