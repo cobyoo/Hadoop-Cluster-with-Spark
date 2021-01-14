@@ -227,7 +227,9 @@ Add the secondary machines to workers file: (only on primary)
 You need to make sure that all the configurations that you just change are going to all machines, to do so, execute the following commands:
 
 hadoop-slave1: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave1:/usr/local/hadoop/etc/hadoop/
+
 hadoop-slave2: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave2:/usr/local/hadoop/etc/hadoop/
+
 hadoop-slave3: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave3:/usr/local/hadoop/etc/hadoop/
 
 # Step 22: Formatting and Starting HDFS system (only primary)
