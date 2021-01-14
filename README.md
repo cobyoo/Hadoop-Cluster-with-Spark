@@ -122,7 +122,27 @@ To set up hadoop path on machine’s environment, open the environment file with
 
 ![image](https://user-images.githubusercontent.com/39446946/104562197-63d0c000-568b-11eb-830c-6d54987331cf.png)
 
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/hadoop/bin:/usr/local/hadoop/sbin"
+JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+
 ![image](https://user-images.githubusercontent.com/39446946/104562301-8236bb80-568b-11eb-946f-4b8c78ad695a.png)
+
+# Step 12: Create a specific user for Hadoop
+
+Start by creating a new user: (I choose to call it h-user, but feel free to choose other name)
+
+![image](https://user-images.githubusercontent.com/39446946/104562551-db9eea80-568b-11eb-8233-5cd21b1138fc.png)
+
+Now you need to give this user permissions to work within hadoop’s folder.
+
+![image](https://user-images.githubusercontent.com/39446946/104562605-eeb1ba80-568b-11eb-9cf8-457171ca7b8a.png)
+
+# Step 13: Clone the primary machine in order to create two secondary machines
+
+Make three full clones of the primary machine:
+
+![image](https://user-images.githubusercontent.com/39446946/104562720-0db04c80-568c-11eb-96ec-2074937adb29.png)
+
 
 
 
