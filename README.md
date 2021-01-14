@@ -283,10 +283,13 @@ To check if all the machines are using the correct resources use:
 
 ![image](https://user-images.githubusercontent.com/39446946/104604882-2d159c80-56c1-11eb-96b0-161544e0b361.png)
 
+# Step 23: Nodes management tool
 
+It’s time to check if all is working fine. Write primary’s IP on your browser using port 9870. 
 
+![image](https://user-images.githubusercontent.com/39446946/104605123-71a13800-56c1-11eb-8721-9df673394b8e.png)
 
-
+![image](https://user-images.githubusercontent.com/39446946/104608382-2721ba80-56c5-11eb-8c5e-08b5e4611a6a.png)
 
 
 
