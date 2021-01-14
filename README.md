@@ -289,7 +289,7 @@ It’s time to check if all is working fine. Write primary’s IP on your browse
 
 ![image](https://user-images.githubusercontent.com/39446946/104608579-64864800-56c5-11eb-9e39-0ac66ff1aca6.png)
 
-![image](https://user-images.githubusercontent.com/39446946/104608382-2721ba80-56c5-11eb-8c5e-08b5e4611a6a.png)
+![image](https://user-images.githubusercontent.com/39446946/104608884-c6df4880-56c5-11eb-8465-5d8573d084bf.png)
 
 
 
