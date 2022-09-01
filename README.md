@@ -1,4 +1,4 @@
-# Apache-Hadoop-Install
+# Install Apache-Hadoop
 
 Hadoop 3.2.1 Multi Node Cluster, Ubuntu 20.04
 
