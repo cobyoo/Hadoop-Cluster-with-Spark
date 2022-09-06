@@ -12,25 +12,25 @@ What do you need to start the set-up?
 
 I will use Ubuntu Server 20.04. The recommended space on your computer would be 24GB.
 
-# Step 1: VMware Workstation pro 16 Network Setting
+## Step 1: VMware Workstation pro 16 Network Setting
 
 On VMware Workstation settings make sure that your Network adapter is set for Bridged.
 
 ![hadoop-network-image](https://user-images.githubusercontent.com/39446946/104556503-0f294700-5683-11eb-95b7-977297bf6c59.PNG)
 
-# Step 2: Install ssh
+##Step 2: Install ssh
 
 Install ssh with the following command:
 
 ![image](https://user-images.githubusercontent.com/39446946/104557353-74ca0300-5684-11eb-9642-d44397f6f264.png)
 
-# Step 3: Install pdsh
+## Step 3: Install pdsh
 
 Install psdh with the following command:
 
 ![image](https://user-images.githubusercontent.com/39446946/104557549-c4a8ca00-5684-11eb-9c15-d6be2fbc5096.png)
 
-# Step 4: Set pdsh environment to ssh
+## Step 4: Set pdsh environment to ssh
 
 Open the Bashrc file with nano:
 
@@ -42,7 +42,7 @@ Add to the end of the file:
 
 ![image](https://user-images.githubusercontent.com/39446946/104558669-81e7f180-5686-11eb-941a-9d0a8567c4fb.png)
 
-# Step 5: Generate a SSH key
+## Step 5: Generate a SSH key
 
 Generate a ssh key with the following command:
 
@@ -52,7 +52,7 @@ Press Enter when asked to choose the storage file.
 
 ![image](https://user-images.githubusercontent.com/39446946/104558965-076ba180-5687-11eb-8a99-cb2bbe903ecb.png)
 
-# Step 6: Clone the key into authorized_keys files
+## Step 6: Clone the key into authorized_keys files
 
 To give the right permissions to your ssh key you should create a copy on authorized_keys files:
 
@@ -68,7 +68,7 @@ Make sure that everything is well set, doing a ssh to our machine.
 
 * Your output may be different
 
-# Step 7: Install Java 8
+## Step 7: Install Java 8
 
 In order to run Hadoop you need to have Java 8 install on your machine. To do so, use the follow command:
 
@@ -88,7 +88,7 @@ Check if Java it’s install with the following command:
 
 ![image](https://user-images.githubusercontent.com/39446946/104561124-3b949180-568a-11eb-923f-5c0fba90a08d.png)
 
-# Step 8: It’s time to download and install Hadoop
+## Step 8: It’s time to download and install Hadoop
 
 First download the tar file that contains Hadoop with the following command:
 
@@ -102,7 +102,7 @@ And move it to a folder that will be called hadoop (it’s a practical solution,
 
 ![image](https://user-images.githubusercontent.com/39446946/104561996-16ece980-568b-11eb-871b-ec11312745b5.png)
 
-# Step 9: Set up Hadoop
+## Step 9: Set up Hadoop
 
 Start to configure the Java path on Hadoop’s virtual environment:
 
@@ -112,13 +112,13 @@ Then look for Java_Home’s line and replace it by:
 
 ![image](https://user-images.githubusercontent.com/39446946/104562048-29ffb980-568b-11eb-8363-d4121890c323.png)
 
-# Step 10: Move the hadoop directory to our user local file
+## Step 10: Move the hadoop directory to our user local file
 
 Move it with the following command:
 
 ![image](https://user-images.githubusercontent.com/39446946/104562104-3b48c600-568b-11eb-9b6c-e883812bb70b.png)
 
-# Step 11: Set up hadoop path
+## Step 11: Set up hadoop path
 
 To set up hadoop path on machine’s environment, open the environment file with:
 
@@ -129,7 +129,7 @@ JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
 
 ![image](https://user-images.githubusercontent.com/39446946/104562301-8236bb80-568b-11eb-946f-4b8c78ad695a.png)
 
-# Step 12: Create a specific user for Hadoop
+## Step 12: Create a specific user for Hadoop
 
 Start by creating a new user: (I choose to call it h-user, but feel free to choose other name)
 
@@ -139,13 +139,13 @@ Now you need to give this user permissions to work within hadoop’s folder.
 
 ![image](https://user-images.githubusercontent.com/39446946/104562605-eeb1ba80-568b-11eb-9cf8-457171ca7b8a.png)
 
-# Step 13: Clone the primary machine in order to create two secondary machines
+## Step 13: Clone the primary machine in order to create two secondary machines
 
 Make three full clones of the primary machine:
 
 ![image](https://user-images.githubusercontent.com/39446946/104562720-0db04c80-568c-11eb-96ec-2074937adb29.png)
 
-# Step 14: Change hostnames
+## Step 14: Change hostnames
 
 Start for changing the hostnames: (computer’s name)
 
@@ -163,7 +163,7 @@ Do the same for secondary machines:
 
 Now reboot all machines.
 
-# Step 15: Identify machine’s ip
+## Step 15: Identify machine’s ip
 
 To know the machine’s IP use:
 
@@ -177,7 +177,7 @@ Now change the hosts file on all machines:
 
 ![image](https://user-images.githubusercontent.com/39446946/104563999-b9a66780-568d-11eb-8b20-6b8d4afc6329.png)
 
-# Step 16: Set up ssh on Primary with our user
+## Step 16: Set up ssh on Primary with our user
 
 Start for changing user:
 
@@ -187,7 +187,7 @@ Now you need to generate a ssh key for this user:
 
 ![image](https://user-images.githubusercontent.com/39446946/104564229-01c58a00-568e-11eb-978c-c868fa58f449.png)
 
-# Step 17: Copy the ssh key our secondary machines
+## Step 17: Copy the ssh key our secondary machines
 
 Copy the already generated key to all the machines:
 
@@ -199,7 +199,7 @@ Copy the already generated key to all the machines:
 
 * "ssh-copy-id hadoop-user@hadoop-slave3"
 
-# Step 18: Configure Hadoop Service Port
+## Step 18: Configure Hadoop Service Port
 
 Change hadoop port configurations: (only on primary)
 
@@ -209,7 +209,7 @@ And then add to file’s configuration:
 
 ![image](https://user-images.githubusercontent.com/39446946/104564503-536e1480-568e-11eb-9e25-3fba3e64b1b2.png)
 
-# Step 19: Configuration of HDFS system
+## Step 19: Configuration of HDFS system
 
 Change HDFS configurations: (only on primary)
 
@@ -219,7 +219,7 @@ And then add to file’s configuration:
 
 ![image](https://user-images.githubusercontent.com/39446946/104564597-74cf0080-568e-11eb-889e-c0f98ae9c3fc.png)
 
-# Step 20: Identify the workers
+## Step 20: Identify the workers
 
 Add the secondary machines to workers file: (only on primary)
 
@@ -227,7 +227,7 @@ Add the secondary machines to workers file: (only on primary)
 
 ![image](https://user-images.githubusercontent.com/39446946/104564722-9af4a080-568e-11eb-8214-44c0c98d400a.png)
 
-# Step 21: Copy configurations into secondary machines
+## Step 21: Copy configurations into secondary machines
 
 You need to make sure that all the configurations that you just change are going to all machines, to do so, execute the following commands:
 
@@ -237,7 +237,7 @@ You need to make sure that all the configurations that you just change are going
 
 * hadoop-slave3: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave3:/usr/local/hadoop/etc/hadoop/
 
-# Step 22: Formatting and Starting HDFS system (only primary)
+## Step 22: Formatting and Starting HDFS system (only primary)
 
 Start for making sure that all changes are applied:
 
@@ -283,7 +283,7 @@ To check if all the machines are using the correct resources use:
 
 ![image](https://user-images.githubusercontent.com/39446946/104604882-2d159c80-56c1-11eb-96b0-161544e0b361.png)
 
-# Step 23: Nodes management tool
+## Step 23: Nodes management tool
 
 It’s time to check if all is working fine. Write primary’s IP on your browser using port 9870. 
 
@@ -291,7 +291,7 @@ It’s time to check if all is working fine. Write primary’s IP on your browse
 
 ![image](https://user-images.githubusercontent.com/39446946/104608884-c6df4880-56c5-11eb-8465-5d8573d084bf.png)
 
-# 24th Step: Yarn configuration
+## Step 24: Yarn configuration
 
 To set up yarn you need to start for exporting all paths: (on hadoop-master)
 
@@ -305,7 +305,7 @@ And then add the following configurations: (On hadoop-slave1, hadoop-slave2, had
 
 ![image](https://user-images.githubusercontent.com/39446946/104610207-30ac2200-56c7-11eb-8f84-76d438e39957.png)
 
-# Step 25: Start Yarn 
+## Step 25: Start Yarn 
 
 To start the Yarn service use: (On hadoop-master)
 
@@ -317,5 +317,5 @@ To have acess to Yarn’s management tool use your browser to acess to primary I
 
 As you can see, the cluster shows 3 active nodes!
 
-# Finish.
+## Finish.
 
