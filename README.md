@@ -12,19 +12,23 @@ What do you need to start the set-up?
 
 I will use Ubuntu Server 20.04. The recommended space on your computer would be 24GB.
 
-## Step 1: VMware Workstation pro 16 Network Setting
+## Index
+- [Step 1 : VMware Workstation pro 16 Network Setting](#Step 1 : VMware Workstation pro 16 Network Setting)
+- [Step 2 : Install ssh](#Step 2 : Install ssh)
+
+## Step 1 : VMware Workstation pro 16 Network Setting
 
 On VMware Workstation settings make sure that your Network adapter is set for Bridged.
 
 ![hadoop-network-image](https://user-images.githubusercontent.com/39446946/104556503-0f294700-5683-11eb-95b7-977297bf6c59.PNG)
 
-## Step 2: Install ssh
+## Step 2 : Install ssh
 
 Install ssh with the following command:
 
 ![image](https://user-images.githubusercontent.com/39446946/104557353-74ca0300-5684-11eb-9642-d44397f6f264.png)
 
-## Step 3: Install pdsh
+## Step 3 : Install pdsh
 
 Install psdh with the following command:
 
