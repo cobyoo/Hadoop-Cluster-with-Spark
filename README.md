@@ -18,7 +18,7 @@ On VMware Workstation settings make sure that your Network adapter is set for Br
 
 ![hadoop-network-image](https://user-images.githubusercontent.com/39446946/104556503-0f294700-5683-11eb-95b7-977297bf6c59.PNG)
 
-##Step 2: Install ssh
+## Step 2: Install ssh
 
 Install ssh with the following command:
 
