@@ -13,9 +13,30 @@ What do you need to start the set-up?
 I will use Ubuntu Server 20.04. The recommended space on your computer would be 24GB.
 
 ## Index
-- [Hadoop 설치 시 발생하는 오류 해결](#Hadoop-설치-시-발생하는-오류-해결)
 - [Step 1 : VMware Workstation pro 16 Network Setting](#Step-1-VMware-Workstation-pro-16-Network-Setting)
-- [Step 2 : Install ssh](#Step-2-:-Install-ssh)
+- [Step 2 : Install ssh](#Step-2-Install-ssh)
+- [Step 3 : Install pdsh](#Step-3-Install-pdsh)
+- [Step 4 : Set pdsh environment to ssh](#Step-4-Set-pdsh-environment-to-ssh)
+- [Step 5 : Generate a SSH key](#Step-5-Generate-a-SSH-key)
+- [Step 6 : Clone the key into authorized_keys files](#Step-6-Clone-the-key-into-authorized_keys-files)
+- [Step 7 : Install Java 8](#Step-7-Install-Java-8)
+- [Step 8 : It’s time to download and install Hadoop](#Step-8-It’s-time-to-download-and-install-Hadoop)
+- [Step 9 : Set up Hadoop](#Step-9-Set-up-Hadoop)
+- [Step 10 : Move the hadoop directory to our user local fileh](#Step-10-Move-the-hadoop-directory-to-our-user-local-file)
+- [Step 11 : Set up hadoop path](#Step-11-Set-up-hadoop-path)
+- [Step 12 : Create a specific user for Hadoop](#Step-12-Create-a-specific-user-for-Hadoop)
+- [Step 13 : Clone the primary machine in order to create two secondary machines](#Step-13-Clone-the-primary-machine-in-order-to-create-two-secondary-machines)
+- [Step 14 : Change hostnames](#Step-14-Change-hostnames)
+- [Step 15 : Identify machine’s ip](#Step-15-Identify-machine’s-ip)
+- [Step 16 : Set up ssh on Primary with our user](#Step-16-Set-up-ssh-on-Primary-with-our-user)
+- [Step 17 : Copy the ssh key our secondary machines](#Step-17-Copy-the-ssh-key-our-secondary-machines)
+- [Step 18 : Configure Hadoop Service Port](#Step-18-Configure-Hadoop-Service-Port)
+- [Step 19 : Configuration of HDFS system](#Step-19-Configuration-of-HDFS-system)
+- [Step 20 : Identify the workers](#Step-20-Identify-the-workers)
+- [Step 21 : Copy configurations into secondary machines](#Step-21-Copy-configurations-into-secondary-machines)
+- [Step 22 : Formatting and Starting HDFS system (only primary)](#Step-22-Formatting-and-Starting-HDFS-system-(only-primary))
+- [Step 23 : Nodes management tool](#Step-23-Nodes-management-tool)
+- [Step 24 : Yarn configuration](#Step-24-Yarn-configuration)
 
 ## Step 1 : VMware Workstation pro 16 Network Setting
 
@@ -35,7 +56,7 @@ Install psdh with the following command:
 
 ![image](https://user-images.githubusercontent.com/39446946/104557549-c4a8ca00-5684-11eb-9c15-d6be2fbc5096.png)
 
-## Step 4: Set pdsh environment to ssh
+## Step 4 : Set pdsh environment to ssh
 
 Open the Bashrc file with nano:
 
@@ -47,7 +68,7 @@ Add to the end of the file:
 
 ![image](https://user-images.githubusercontent.com/39446946/104558669-81e7f180-5686-11eb-941a-9d0a8567c4fb.png)
 
-## Step 5: Generate a SSH key
+## Step 5 : Generate a SSH key
 
 Generate a ssh key with the following command:
 
@@ -57,7 +78,7 @@ Press Enter when asked to choose the storage file.
 
 ![image](https://user-images.githubusercontent.com/39446946/104558965-076ba180-5687-11eb-8a99-cb2bbe903ecb.png)
 
-## Step 6: Clone the key into authorized_keys files
+## Step 6 : Clone the key into authorized_keys files
 
 To give the right permissions to your ssh key you should create a copy on authorized_keys files:
 
@@ -73,7 +94,7 @@ Make sure that everything is well set, doing a ssh to our machine.
 
 * Your output may be different
 
-## Step 7: Install Java 8
+## Step 7 : Install Java 8
 
 In order to run Hadoop you need to have Java 8 install on your machine. To do so, use the follow command:
 
@@ -93,7 +114,7 @@ Check if Java it’s install with the following command:
 
 ![image](https://user-images.githubusercontent.com/39446946/104561124-3b949180-568a-11eb-923f-5c0fba90a08d.png)
 
-## Step 8: It’s time to download and install Hadoop
+## Step 8 : It’s time to download and install Hadoop
 
 First download the tar file that contains Hadoop with the following command:
 
@@ -107,7 +128,7 @@ And move it to a folder that will be called hadoop (it’s a practical solution,
 
 ![image](https://user-images.githubusercontent.com/39446946/104561996-16ece980-568b-11eb-871b-ec11312745b5.png)
 
-## Step 9: Set up Hadoop
+## Step 9 : Set up Hadoop
 
 Start to configure the Java path on Hadoop’s virtual environment:
 
