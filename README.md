@@ -13,7 +13,8 @@ What do you need to start the set-up?
 I will use Ubuntu Server 20.04. The recommended space on your computer would be 24GB.
 
 ## Index
-- [Step 1 : VMware Workstation pro 16 Network Setting](#Step-1-VMware-Workstation-pro-16-Network-Setting)
+ [Hadoop 설치시 발생하는 오류 해결](#Hadoop-설치시-발생하는-오류-해결)
+- [Step 1 : VMware Workstation pro 16 Network Setting](#Step-1-:-VMware-Workstation-pro-16-Network-Setting)
 - [Step 2 : Install ssh](#Step-2-Install-ssh)
 - [Step 3 : Install pdsh](#Step-3-Install-pdsh)
 - [Step 4 : Set pdsh environment to ssh](#Step-4-Set-pdsh-environment-to-ssh)
