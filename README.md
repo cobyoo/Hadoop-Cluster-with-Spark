@@ -35,7 +35,7 @@ I will use Ubuntu Server 20.04. The recommended space on your computer would be 
 - [Step 19 Configuration of HDFS system](#Step-19-Configuration-of-HDFS-system)
 - [Step 20 Identify the workers](#Step-20-Identify-the-workers)
 - [Step 21 Copy configurations into secondary machines](#Step-21-Copy-configurations-into-secondary-machines)
-- [Step 22 Formatting and Starting HDFS system (only primary)](#Step-22-Formatting-and-Starting-HDFS-system-(only-primary))
+- [Step 22 Formatting and Starting HDFS system](#Step-22-Formatting-and-Starting-HDFS-system)
 - [Step 23 Nodes management tool](#Step-23-Nodes-management-tool)
 - [Step 24 Yarn configuration](#Step-24-Yarn-configuration)
 - [Finish.](#Finish.)
@@ -265,7 +265,7 @@ You need to make sure that all the configurations that you just change are going
 
 * hadoop-slave3: scp /usr/local/hadoop/etc/hadoop/* hadoop-slave3:/usr/local/hadoop/etc/hadoop/
 
-## Step 22 Formatting and Starting HDFS system (only primary)
+## Step 22 Formatting and Starting HDFS system
 
 Start for making sure that all changes are applied:
 
