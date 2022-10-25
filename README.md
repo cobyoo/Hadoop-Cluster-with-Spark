@@ -14,7 +14,7 @@ I will use Ubuntu Server 20.04. The recommended space on your computer would be 
 
 ## Index
  [Hadoop 설치시 발생하는 오류 해결](#Hadoop-설치시-발생하는-오류-해결)
-- [Step 1 VMware Workstation pro 16 Network Setting](#Step-1-VMware-Workstation-pro-16-Network-Setting)
+- [Step 1 : VMware Workstation pro 16 Network Setting](#Step-1-:-VMware-Workstation-pro-16-Network-Setting)
 - [Step 2 Install ssh](#Step-2-Install-ssh)
 - [Step 3 Install pdsh](#Step-3-Install-pdsh)
 - [Step 4 Set pdsh environment to ssh](#Step-4-Set-pdsh-environment-to-ssh)
@@ -40,7 +40,7 @@ I will use Ubuntu Server 20.04. The recommended space on your computer would be 
 - [Step 24 Yarn configuration](#Step-24-Yarn-configuration)
 - [Finish.](#Finish.)
 
-## Step 1 VMware Workstation pro 16 Network Setting
+## Step 1 : VMware Workstation pro 16 Network Setting
 
 On VMware Workstation settings make sure that your Network adapter is set for Bridged.
 
