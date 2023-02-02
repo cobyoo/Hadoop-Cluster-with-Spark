@@ -349,9 +349,9 @@
 ## Step 26 Set up Spark
 
     Installing and Setting up a Yarn-Based Spark
-    wget https://dlcdn.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz
-    tar -xvf spark-3.1.3-bin-hadoop3.2.tgz
-    mv spark-3.1.3-bin-hadoop3.2 spark
+        wget https://dlcdn.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz
+        tar -xvf spark-3.1.3-bin-hadoop3.2.tgz
+        mv spark-3.1.3-bin-hadoop3.2 spark
 
 
  
