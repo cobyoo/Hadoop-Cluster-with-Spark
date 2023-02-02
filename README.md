@@ -37,7 +37,7 @@ I will use Ubuntu Server 20.04. The recommended space on your computer would be 
 - [Step 22.  Formatting and Starting HDFS system](#Step-22-Formatting-and-Starting-HDFS-system)
 - [Step 23.  Nodes management tool](#Step-23-Nodes-management-tool)
 - [Step 24.  Yarn configuration](#Step-24-Yarn-configuration)
-- [Step 25.  Set up Spark](#Step-25-Set-up-Spark)
+- [Step 25  Set up Spark](#Step-25-Set-up-Spark)
 - [Finish.](#Finish.)
 
 ## Step 1 VMware Workstation pro 16 Network Setting
