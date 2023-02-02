@@ -348,5 +348,9 @@
 
 ## Step 26 Set up Spark
 
+    Installing and Setting up a Yarn-Based Spark
+    wget https://dlcdn.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz![image](https://user-images.githubusercontent.com/39446946/216248352-1d8d2b83-65c5-4c8b-ae9e-e8031ec9996b.png)
+
+
 ## Finish.
 
