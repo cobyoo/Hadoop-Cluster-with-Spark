@@ -345,7 +345,7 @@ To have acess to Yarn’s management tool use your browser to acess to primary I
 
 As you can see, the cluster shows 3 active nodes!
 
-## Step 26 Set up Spark
+## Step 25 Set up Spark
 
 ## Finish.
 
