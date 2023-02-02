@@ -37,6 +37,7 @@ I will use Ubuntu Server 20.04. The recommended space on your computer would be 
 - [Step 22.  Formatting and Starting HDFS system](#Step-22-Formatting-and-Starting-HDFS-system)
 - [Step 23.  Nodes management tool](#Step-23-Nodes-management-tool)
 - [Step 24.  Yarn configuration](#Step-24-Yarn-configuration)
+- [Step 25.  Set up Spark](#Step-25-Set-up-Spark)
 - [Finish.](#Finish.)
 
 ## Step 1 VMware Workstation pro 16 Network Setting
@@ -343,5 +344,8 @@ To have acess to Yarn’s management tool use your browser to acess to primary I
 ![image](https://user-images.githubusercontent.com/39446946/104610447-7c5ecb80-56c7-11eb-9c93-117dcb52cf5b.png)
 
 As you can see, the cluster shows 3 active nodes!
+
+## Step 26 Set up Spark
+
 ## Finish.
 
