@@ -1,4 +1,4 @@
-# Install Apache-Hadoop
+# Hadoop Cluster with Spark
 
 Hadoop 3.2.1 Multi Node Cluster, Ubuntu 20.04
 
