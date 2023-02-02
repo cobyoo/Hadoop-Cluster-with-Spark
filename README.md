@@ -349,13 +349,37 @@
 ## Step 26 Set up Spark
 
     Installing and Setting up a Yarn-Based Spark
-        wget https://dlcdn.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz
-        tar -xvf spark-3.1.3-bin-hadoop3.2.tgz
-        mv spark-3.1.3-bin-hadoop3.2 spark
+        $ wget https://dlcdn.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz
+        $ tar -xvf spark-3.1.3-bin-hadoop3.2.tgz
+        $ mv spark-3.1.3-bin-hadoop3.2 spark
+        
+    Modify bashrc file
+        export SPARK_HOME=/home/lect/spark
+        export PYTHONPATH=$SPARK_HOME/python/lib/pyspark.zip:$SPARK_HOME/python/lib/py4j-0.10.9-src.zip
+        export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+        export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
+        export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+        export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH
+        
+    Reflect Changes
+        $ source ~/.bashrc
 
+    Creating and modifying the spark-defaults.conf file 
+        spark.master                     yarn
+        spark.eventLog.enabled           true
+        spark.eventLog.dir               file:///home/dblab/spark/sparkeventlog
+        spark.serializer                 org.apache.spark.serializer.KryoSerializer
+        spark.driver.memory              40g
+        spark.yarn.am.memory             4g
+        spark.executor.instances         20
+        spark.executor.cores             4
+        spark.executor.memory            7g
 
+    Running the Spark Master
+        $ ~/spark/sbin$./start-master.sh
  
-
-
+    Running the Spark workers
+        $ ~/spark/sbin$./start-workers.sh 
+        
 ## Finish.
 
