@@ -49,57 +49,57 @@
 
 ## Step 2 Install ssh
 
-Install ssh with the following command:
+    Install ssh with the following command:
 
-![image](https://user-images.githubusercontent.com/39446946/104557353-74ca0300-5684-11eb-9642-d44397f6f264.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104557353-74ca0300-5684-11eb-9642-d44397f6f264.png)
 
 ## Step 3 Install pdsh
 
-Install psdh with the following command:
+    Install psdh with the following command:
 
-![image](https://user-images.githubusercontent.com/39446946/104557549-c4a8ca00-5684-11eb-9c15-d6be2fbc5096.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104557549-c4a8ca00-5684-11eb-9c15-d6be2fbc5096.png)
 
 ## Step 4 Set pdsh environment to ssh
 
-Open the Bashrc file with nano:
+    Open the Bashrc file with nano:
 
-![image](https://user-images.githubusercontent.com/39446946/104558349-02f2b900-5686-11eb-9d94-c04ca4e2c502.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104558349-02f2b900-5686-11eb-9d94-c04ca4e2c502.png)
 
-Add to the end of the file:
+    Add to the end of the file:
 
-![image](https://user-images.githubusercontent.com/39446946/104558405-156cf280-5686-11eb-83c1-8242df50eca0.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104558405-156cf280-5686-11eb-83c1-8242df50eca0.png)
 
-![image](https://user-images.githubusercontent.com/39446946/104558669-81e7f180-5686-11eb-941a-9d0a8567c4fb.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104558669-81e7f180-5686-11eb-941a-9d0a8567c4fb.png)
 
 ## Step 5 Generate a SSH key
 
-Generate a ssh key with the following command:
+    Generate a ssh key with the following command:
 
-![image](https://user-images.githubusercontent.com/39446946/104558775-b196f980-5686-11eb-8549-5ab39a917230.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104558775-b196f980-5686-11eb-8549-5ab39a917230.png)
 
-Press Enter when asked to choose the storage file.
+    Press Enter when asked to choose the storage file.
 
-![image](https://user-images.githubusercontent.com/39446946/104558965-076ba180-5687-11eb-8a99-cb2bbe903ecb.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104558965-076ba180-5687-11eb-8a99-cb2bbe903ecb.png)
 
 ## Step 6 Clone the key into authorized_keys files
 
-To give the right permissions to your ssh key you should create a copy on authorized_keys files:
+    To give the right permissions to your ssh key you should create a copy on authorized_keys files:
 
-![image](https://user-images.githubusercontent.com/39446946/104559062-2c601480-5687-11eb-9ea3-7021774a9759.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104559062-2c601480-5687-11eb-9ea3-7021774a9759.png)
 
-![image](https://user-images.githubusercontent.com/39446946/104559477-caec7580-5687-11eb-8690-3cfad0bd7d98.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104559477-caec7580-5687-11eb-8690-3cfad0bd7d98.png)
 
-Make sure that everything is well set, doing a ssh to our machine.
+    Make sure that everything is well set, doing a ssh to our machine.
 
-![image](https://user-images.githubusercontent.com/39446946/104559344-97115000-5687-11eb-89c2-2f19502167bb.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104559344-97115000-5687-11eb-89c2-2f19502167bb.png)
 
-![image](https://user-images.githubusercontent.com/39446946/104559609-f8392380-5687-11eb-9ed5-a8ff2b55f811.png)
+   ![image](https://user-images.githubusercontent.com/39446946/104559609-f8392380-5687-11eb-9ed5-a8ff2b55f811.png)
 
-* Your output may be different
+    * Your output may be different
 
 ## Step 7 Install Java 8
 
-In order to run Hadoop you need to have Java 8 install on your machine. To do so, use the follow command:
+    In order to run Hadoop you need to have Java 8 install on your machine. To do so, use the follow command:
 
 (※Github: https://github.com/frekele/oracle-java/releases), Java-Version: "jdk-8u212-linux-x64.tar.gz"
 
