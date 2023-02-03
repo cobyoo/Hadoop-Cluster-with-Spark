@@ -4,7 +4,8 @@
 
     What is Hadoop?
 
-    “open-source software for reliable, scalable, distributed computing”, this means that is a framework for distributed processing.
+    “open-source software for reliable, scalable, distributed computing”, 
+    this means that is a framework for distributed processing.
 
     It’s simply several computers working together in order to improve processing power and assure decentralize operations.
 
